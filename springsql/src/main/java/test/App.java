@@ -1,4 +1,4 @@
-package taotao;
+package test;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;

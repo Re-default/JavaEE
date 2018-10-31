@@ -1,4 +1,4 @@
-package taotao;
+package test;
 
 
 import org.springframework.stereotype.Component;

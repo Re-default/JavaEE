@@ -1,4 +1,4 @@
-package taotao;
+package test;
 
 public class ProductService {
     public void add(String username) throws Exception {

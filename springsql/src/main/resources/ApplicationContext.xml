@@ -12,9 +12,9 @@ http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
     <!-- 引入AOP -->
     <aop:aspectj-autoproxy />
     <!-- 自动扫描annotation配置 -->
-    <context:component-scan base-package="taotao" />
+    <context:component-scan base-package="test" />
 
     <!-- 自定义的日志切面声明 -->
-    <bean id="logAspect" class="taotao.LogAspect"></bean>
-    <bean id="ProductService" class="taotao.ProductService"></bean>
+    <bean id="logAspect" class="test.LogAspect"></bean>
+    <bean id="ProductService" class="test.ProductService"></bean>
 </beans>

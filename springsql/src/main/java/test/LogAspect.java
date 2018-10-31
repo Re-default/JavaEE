@@ -1,4 +1,4 @@
-package taotao;
+package test;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
@@ -8,7 +8,7 @@ import org.aspectj.lang.annotation.Aspect;
 @Aspect
 public class LogAspect {
 
-   @AfterReturning("execution (* taotao.*.*(..))")
+   @AfterReturning("execution (* test.*.*(..))")
     public void logAfterReturning(JoinPoint jp){
         String className = jp.getSignature().getDeclaringTypeName();
         String methodName = jp.getSignature().getName();
@@ -23,7 +23,7 @@ public class LogAspect {
      * @param jp 调用点信息
      * @param ex 异常信息
      */
-    @AfterThrowing( pointcut="execution(* taotao.*.*(..)))",throwing="ex")
+    @AfterThrowing( pointcut="execution(* test.*.*(..)))",throwing="ex")
     public void logAfterThrowing(JoinPoint jp,Exception ex){
         String className = jp.getSignature().getDeclaringTypeName();
         String methodName = jp.getSignature().getName();
